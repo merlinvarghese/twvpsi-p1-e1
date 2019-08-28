@@ -10,7 +10,16 @@ class Rectangle {
         width = rectWidth;
     }
 
+    Rectangle(float side) {
+        length = side;
+        width = side;
+    }
+
     float area() {
         return length * width;
+    }
+
+    float perimeter(){
+        return 2 * (length + width);
     }
 }

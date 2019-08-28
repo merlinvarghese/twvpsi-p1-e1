@@ -14,4 +14,24 @@ class RectangleTest {
         Rectangle rectangle = new Rectangle(2, 4);
         assertEquals(8, rectangle.area());
     }
+
+    @Test
+    void verifyPerimeterIs12ForInput2And4() {
+        Rectangle rectangle = new Rectangle(2, 4);
+        assertEquals(12, rectangle.perimeter());
+    }
+
+    @Test
+    void verifyAreaIs4ForInput2() {
+        Rectangle rectangle = new Rectangle(2);
+        assertEquals(4, rectangle.area());
+    }
+
+    @Test
+    void verifyPerimeterIs8ForInput2() {
+        Rectangle rectangle = new Rectangle(2);
+        assertEquals(8, rectangle.perimeter());
+    }
+
+
 }
