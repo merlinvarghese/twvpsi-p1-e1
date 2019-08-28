@@ -1,25 +1,20 @@
 /* Defines a closed geometrical shape with four sides at an angle of 90 degree each */
 package com.tw.vapasi;
 
-class Rectangle {
-    private float length;
-    private float width;
+class Rectangle extends Shape {
+    private  double length;
+    private  double width;
 
-    Rectangle(float rectLength, float rectWidth) {
-        length = rectLength;
-        width = rectWidth;
+    Rectangle(double length, double width) {
+        this.length=length;
+        this.width=width;
     }
-
-    Rectangle(float side) {
-        length = side;
-        width = side;
-    }
-
-    float area() {
+    @Override
+    public double area() {
         return length * width;
     }
-
-    float perimeter() {
+    @Override
+    public double perimeter() {
         return 2 * (length + width);
     }
 }

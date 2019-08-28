@@ -23,17 +23,7 @@ class RectangleTest {
         assertEquals(12, rectangle.perimeter());
     }
 
-    @Test
-    void expectAreaIs4ForInput2() {
-        Rectangle rectangle = new Rectangle(2);
-        assertEquals(4, rectangle.area());
-    }
 
-    @Test
-    void expectPerimeterIs8ForInput2() {
-        Rectangle rectangle = new Rectangle(2);
-        assertEquals(8, rectangle.perimeter());
-    }
 
 
 }
