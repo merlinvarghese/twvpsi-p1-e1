@@ -19,7 +19,7 @@ class Rectangle {
         return length * width;
     }
 
-    float perimeter(){
+    float perimeter() {
         return 2 * (length + width);
     }
 }
